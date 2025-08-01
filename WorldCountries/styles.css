@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  letter-spacing: 8px;
+  font-weight: 600;
+}
+
+#total-countries {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: -5px;
+}
+
+.project,
+.author {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -2px;
+}
+
+.author {
+  text-decoration: underline;
+  font-size: .9rem;
+}
+
+.countries-container {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.countries-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+}
+
+.countries {
+  max-width: 160px;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  border: 4px solid #f7f7f9;
+  padding: 0 5px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .countries-wrapper {
+    justify-content: center;
+  }
+
+  #total-countries,
+  .project,
+  .author {
+    font-size: 0.9rem;
+  }
+
+  .countries {
+    height: 160px;
+    font-size: 0.9rem;
+  }
+}
