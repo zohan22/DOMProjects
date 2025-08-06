@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   gap: 10px;
 }
 
@@ -20,16 +19,16 @@ h1 {
   margin-top: 20px;
   text-align: center;
   font-weight: 700;
-  font-size: 1.7rem;
-  letter-spacing: 1px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #21bf73;
 }
 
 h2 {
   margin-top: -10px;
   text-align: center;
   font-weight: 500;
-  font-size: 1.2rem;
-  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -41,27 +40,76 @@ h3 {
 }
 
 .wrapper {
-  max-width: 1000px;
-  height: auto;
-  margin: 20px;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  padding: 5px;
+  margin: 20px 0;
+  padding-left: 35px;
+}
+
+.error {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fd5e53;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
+
+.generate {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#number {
+  height: 40px;
+  border: 2px solid #21bf73;
+  padding-left: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+#number:focus {
+  outline: none;
+  border-color: #1e9f5b;
+}
+
+.generate button {
+  height: 40px;
+  width: 170px;
+  background-color: #21bf73;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.generate button:hover {
+  background-color: #1e9f5b;
 }
 
 .numbers {
-  width: 160px;
-  height: 80px;
+  width: 120px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   font-size: 2rem;
   color: white;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  text-align: center;
 }
